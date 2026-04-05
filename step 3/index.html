@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<title>GPA Calculator</title>
+</head>
+
+<body class="container mt-5">
+
+<h1>GPA Calculator</h1>
+
+<div id="result"></div>
+
+<form id="gpaForm">
+
+<div id="courses">
+<div class="row mb-2 course-row">
+<input type="text" name="course[]" class="form-control col" placeholder="Course" required>
+<input type="number" name="credits[]" class="form-control col-2" min="1" required>
+<select name="grade[]" class="form-control col-2">
+<option value="4.0">A</option>
+<option value="3.0">B</option>
+<option value="2.0">C</option>
+<option value="1.0">D</option>
+<option value="0.0">F</option>
+</select>
+</div>
+</div>
+
+<button type="button" id="addCourse" class="btn btn-secondary">+ Add</button>
+<br><br>
+
+<button type="submit" class="btn btn-primary">Calculate</button>
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
